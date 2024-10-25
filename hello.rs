@@ -1,1 +1,3 @@
-hello world this is not corect rust syntax
+fn main(){
+  println!("hello worl");
+}
