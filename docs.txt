@@ -1,0 +1,32 @@
+# Creating a documentation file in text format for the AirDrop alternative script
+
+doc_content = """
+# AirDrop Alternative Documentation
+
+## Overview
+
+This Python script provides a simple file-sharing tool over a local network (LAN) and acts as an alternative to Apple's AirDrop. 
+The application supports two modes: **server** (for receiving files) and **client** (for sending files). The server listens for 
+incoming file transfer requests, while the client can connect to the server and transfer a specified file.
+
+The script uses the `socket` library to handle network connections and `threading` to allow multiple clients to connect to the 
+server simultaneously.
+
+## Prerequisites
+
+- Python 3.x
+- Both the server and client devices must be connected to the same local network.
+- Basic understanding of networking (for IP address input).
+
+## File Structure
+
+- **airdrop_alternative.py**: The main Python file for running the server or client to transfer files.
+
+## Usage
+
+### Running the Script
+
+1. **Server Mode**: Run this mode on the device you wish to receive files on.
+   ```bash
+   python airdrop_alternative.py
+   # Choose "server" when prompted
